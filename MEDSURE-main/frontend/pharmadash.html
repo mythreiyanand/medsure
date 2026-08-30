@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSure - Pharmacy Dashboard</title>
+    <link rel="stylesheet" href="pharmadash.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="C:\Users\Lenovo\Downloads\WhatsApp_Image_2024-08-09_at_21.26.17_01d2dc0c-removebg-preview.png" alt="App Logo" class="app-logo">
+                <p class="tagline">Ensuring authenticity, One scan at a time</p>
+            </div>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#scan-medicine">Scan Medicine QR</a></li>
+                <li><a href="#verify-medicine">Verify Medicine</a></li>
+                <li><a href="#view-history">View Scan History</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <section id="scan-medicine" class="section">
+                <h3>Scan Medicine QR</h3>
+                <button type="button" onclick="openCamera()">Open Camera to Scan QR</button>
+                <p>OR</p>
+                <label for="barcode-input">Enter Barcode Manually</label>
+                <input type="text" id="barcode-input">
+                <button type="button" onclick="submitBarcode()">Submit</button>
+            </section>
+            <section id="verify-medicine" class="section">
+                <h3>Verify Medicine</h3>
+                <div id="verification-status">
+                    <!-- Verification status will be displayed here -->
+                </div>
+                <div id="medicine-details">
+                    <!-- Medicine details will be displayed here -->
+                </div>
+                <div id="alert-message">
+                    <!-- Alert message will be displayed here if the medicine is fake -->
+                </div>
+            </section>
+            <section id="view-history" class="section">
+                <h3>View Scan History</h3>
+                <input type="text" id="search-bar" placeholder="Search by Date, Status, etc.">
+                <ul id="history-list">
+                    <!-- List of scan history will be displayed here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="pharmadash.js"></script>
+</body>
+</html>

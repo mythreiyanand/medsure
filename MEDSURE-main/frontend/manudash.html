@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSure - Manufacturer Dashboard</title>
+    <link rel="stylesheet" href="manudash.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo-container">
+                <img src="C:\Users\Lenovo\Downloads\WhatsApp_Image_2024-08-09_at_21.26.17_01d2dc0c-removebg-preview.png" alt="App Logo" class="app-logo">
+                <p class="tagline">Ensuring authenticity, One scan at a time</p>
+            </div>
+            <ul>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#upload-medicine">Upload Medicine Data</a></li>
+                <li><a href="#view-products">View Uploaded Products</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <section id="upload-medicine" class="section">
+                <h3>Upload Medicine Data</h3>
+                <form id="upload-form">
+                    <label for="medicine-name">Medicine Name</label>
+                    <input type="text" id="medicine-name" required>
+                    
+                    <label for="batch-number">Batch Number</label>
+                    <input type="text" id="batch-number" required>
+                    
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="date" id="expiry-date" required>
+                    
+                    <label for="serial-number">Serial Number</label>
+                    <input type="text" id="serial-number" required>
+                    
+                    <button type="button" onclick="generateBarcode()">Generate QR</button>
+                    
+                    <div id="barcode-area">
+                        <!-- QR code will be generated here -->
+                    </div>
+
+                    <button type="submit">Upload</button>
+                </form>
+            </section>
+            <section id="view-products" class="section">
+                <h3>View Uploaded Products</h3>
+                <input type="text" id="search-bar" placeholder="Search by Batch Number, Date, etc.">
+                <ul id="product-list">
+                    <!-- List of uploaded products will be displayed here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="manudash.js"></script>
+</body>
+</html>
