@@ -5,12 +5,11 @@ body, html {
     font-family: Arial, sans-serif;
 }
 .logo {
-    width: 120px !important;
-    height: auto !important;
-    max-width: 120px !important;
-    object-fit: contain;
-    margin: 0 auto 12px;
     display: block;
+    width: 300px;
+    max-width: 65%;
+    height: auto;
+    margin: 0 auto 15px;
 }
 .hero {
     background-image: url('https://img.freepik.com/free-vector/medical-healthcare-blue-color_1017-26807.jpg?t=st=1723342650~exp=1723346250~hmac=ca973981269f2f7282a10ab6a8a2da7ac231a940f34e9a98d906af6fe6630161&w=1380');
