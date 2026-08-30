@@ -9,10 +9,12 @@ body {
     background-color: #8beae4;
 }
 .logo {
-    width: 220px;
-    height: auto;
+    width: 120px !important;
+    height: auto !important;
+    max-width: 120px !important;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin: 0 auto 12px;
+    display: block;
 }
 .container {
     display: flex;
