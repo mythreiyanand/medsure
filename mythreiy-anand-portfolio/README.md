@@ -1,1 +1,0 @@
-Single-file portfolio. All local images are embedded directly in index.html, so upload only index.html to GitHub/Vercel. External project previews use iframes with Open full site fallbacks. GitHub: https://github.com/mythreiyanand
