@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <form class="signup-form" id="signup-form">
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <small class="error-message" id="name-error"></small>
+            </div>
+            <div class="input-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <small class="error-message" id="email-error"></small>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <small class="error-message" id="password-error"></small>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                <small class="error-message" id="confirm-password-error"></small>
+            </div>
+            <div class="input-group role-group">
+                <p>Role:</p>
+                <label><input type="radio" name="role" value="manufacturer" required> Manufacturer</label>
+                <label><input type="radio" name="role" value="pharmacy" required> Pharmacy</label>
+                <small class="error-message" id="role-error"></small>
+            </div>
+            <div class="input-group terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I read and agree to Terms & Conditions</label>
+                <small class="error-message" id="terms-error"></small>
+            </div>
+            <button type="submit" class="create-account">Create Account</button>
+            <p>Already have an account? <a href="s.html"><u>Login</u></a></p>
+            <small class="error-message" id="signup-error"></small>
+        </form>
+    </div>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>
